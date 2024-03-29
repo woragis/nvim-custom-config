@@ -4,6 +4,12 @@ local capabilities = config.capabilities
 
 local lspconfig = require("lspconfig")
 
+lspconfig.pyright.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"python"},
+})
+
 local function organize_imports()
   local params = {
     command = "_typescript.organizeImports",
