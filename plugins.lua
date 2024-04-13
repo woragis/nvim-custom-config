@@ -80,6 +80,7 @@ local plugins = {
         "black",
         "debugpy",
         "rust-analyzer",
+        "lua-language-server"
       }
     }
   },
