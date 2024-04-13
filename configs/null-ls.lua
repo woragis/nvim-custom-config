@@ -1,6 +1,10 @@
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local null_ls = require("null-ls")
 
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+
 local opts = {
   sources = {
     null_ls.builtins.diagnostics.mypy,
