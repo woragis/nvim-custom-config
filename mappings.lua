@@ -4,11 +4,11 @@ M.dap = {
   plugin = true,
   n = {
     ["<leader>db"] = {
-      "<cmd> DabToggleBreakpoint <CR>",
+      "<cmd> DapToggleBreakpoint <CR>",
       "Add breakpoint at line"
     },
     ["<leader>dr"] = {
-      "<cmd> DabContinue <CR>",
+      "<cmd> DapContinue <CR>",
       "Run or continue the debugger"
     },
   }
